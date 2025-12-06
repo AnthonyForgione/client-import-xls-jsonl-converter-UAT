@@ -23,7 +23,7 @@ body {
 }
 
 .app-logo {
-  height: 60px;
+  height: 40px; /* Reduced logo size */
   object-fit: contain;
 }
 
