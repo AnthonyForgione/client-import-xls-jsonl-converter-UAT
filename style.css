@@ -1,53 +1,120 @@
-/* Instructions block */
-.instructions {
-  background-color: #fdf8f2; /* very light background */
-  padding: 15px 20px;
-  border-left: 6px solid #015684; /* Catalyst border for emphasis */
-  border-radius: 6px;
-  margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #0E2638; /* Dark Indigo text */
-}
-
-.instructions span.mandatory {
-  background-color: #FFA500; /* orange highlight */
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-weight: 500;
-}
-
-.instructions span.person-only {
-  background-color: #28a745; /* green highlight */
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-weight: 500;
-}
-
-.instructions span.common {
-  background-color: #fff; /* white */
+/* GLOBAL ---------------------------------------------------- */
+body {
+  font-family: 'Public Sans', sans-serif;
+  background: #F7F9FA;
+  margin: 0;
+  padding: 40px;
   color: #0E2638;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-weight: 500;
 }
 
-/* Template download link styling */
-#templateLink {
-  display: inline-block;
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #4F6781;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #0E2638;
+  font-size: 22px;
+}
+
+.small-title {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* STEP BLOCKS ------------------------------------------------ */
+.step-block {
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E1E6EB;
+}
+
+/* COLOR LIST -------------------------------------------------- */
+.color-list {
+  padding-left: 20px;
   margin-bottom: 20px;
-  padding: 12px 20px;
-  background-color: #015684; /* Catalyst */
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s, transform 0.2s;
+  line-height: 1.6;
 }
 
-#templateLink:hover {
-  background-color: #013d5b;
-  transform: translateY(-1px);
+.color-list span {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+}
+
+.mandatory { background-color: #FFA500; }
+.person-only { background-color: #28a745; }
+.common {
+  background-color: #fff;
+  color: #0E2638 !important;
+  border: 1px solid #d0d0d0;
+}
+
+/* BUTTONS ----------------------------------------------------- */
+.button-primary {
+  display: inline-block;
+  background: #015684;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.25s;
+}
+
+.button-primary:hover {
+  background: #013d5b;
+  transform: translateY(-2px);
+}
+
+/* FILE UPLOAD ------------------------------------------------- */
+#fileInput {
+  display: none;
+}
+
+.file-upload {
+  display: inline-block;
+  background: #ffffff;
+  border: 2px dashed #015684;
+  color: #015684;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 15px;
+}
+
+.file-upload:hover {
+  background: #E9F4FA;
+}
+
+/* OUTPUT BOX -------------------------------------------------- */
+pre {
+  background: #F4F6F8;
+  border: 1px solid #D8E0E6;
+  padding: 15px;
+  border-radius: 6px;
+  max-height: 350px;
+  overflow: auto;
+  margin-top: 15px;
 }
