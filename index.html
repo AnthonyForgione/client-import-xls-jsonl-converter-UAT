@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XLSX to JSON Converter</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <meta charset="UTF-8">
+  <title>XLS to JSONL Converter</title>
 </head>
 <body>
+  <h2>XLS/XLSX → JSONL Converter</h2>
 
-<div class="container">
-    <h1>XLSX → JSON Converter</h1>
+  <!-- File input -->
+  <input type="file" id="fileInput" accept=".xls,.xlsx" />
 
-    <input type="file" id="fileInput" accept=".xls,.xlsx" />
+  <!-- Convert button -->
+  <button id="convertBtn">Convert</button>
 
-    <button id="convertBtn">Convert</button>
+  <!-- Output preview -->
+  <pre id="output" style="border:1px solid #ccc; padding:10px; max-height:300px; overflow:auto;"></pre>
 
-    <pre id="output"></pre>
+  <!-- Download link -->
+  <a id="downloadLink" style="display:none;"></a>
 
-    <a id="downloadLink" style="display:none;">Download JSON</a>
-</div>
+  <!-- SheetJS library -->
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
 
-<script src="script.js"></script>
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
