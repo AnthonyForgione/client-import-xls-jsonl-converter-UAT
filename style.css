@@ -20,9 +20,10 @@ body {
 /* HEADER: Title left, Logo right */
 .header-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  flex-direction: row;     /* ensure horizontal layout */
+  justify-content: space-between; /* title left, logo right */
+  align-items: center;     /* vertically align title and logo */
+  margin-bottom: 15px;
 }
 
 .header-flex h1 {
@@ -33,7 +34,8 @@ body {
 }
 
 .header-flex .app-logo {
-  height: 40px;
+  height: 40px;      /* fixed height */
+  width: auto;       /* keep aspect ratio */
   object-fit: contain;
 }
 
