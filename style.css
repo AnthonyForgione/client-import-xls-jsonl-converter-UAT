@@ -1,3 +1,4 @@
+/* Instructions block */
 .instructions {
   background-color: #fdf8f2; /* very light background */
   padding: 15px 20px;
@@ -31,4 +32,22 @@
   padding: 2px 6px;
   border-radius: 3px;
   font-weight: 500;
+}
+
+/* Template download link styling */
+#templateLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background-color: #015684; /* Catalyst */
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#templateLink:hover {
+  background-color: #013d5b;
+  transform: translateY(-1px);
 }
