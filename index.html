@@ -18,14 +18,14 @@
   <div class="container">
 
     <!-- HEADER: Title Left, Logo Right -->
-   <!-- HEADER: Title Left, Logo Right -->
-<div class="header-flex">
-  <h1>ASAM Client Import Converter</h1>
-  <img src="logo.png" alt="Company Logo" class="app-logo">
-</div>
-<p class="sub-description">
-  Convert the XLS template into JSONL for ASAM client import.
-</p>
+    <div class="header-flex">
+      <h1>ASAM Client Import Converter</h1>
+      <img src="logo.png" alt="Company Logo" class="app-logo">
+    </div>
+
+    <p class="sub-description">
+      Convert the XLS template into JSONL for ASAM client import.
+    </p>
 
     <!-- STEP 1 -->
     <section class="step-box">
@@ -53,6 +53,21 @@
       <a id="downloadLink" class="download-jsonl" style="display:none;">Download JSONL</a>
 
       <pre id="output"></pre>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="step-box">
+      <h2>Step 3: Upload the JSONL file in ASAM</h2>
+
+      <p>Explanations:</p>
+      <ol class="asam-steps">
+        <li>Open ASAM.</li>
+        <li>Go to Settings.</li>
+        <li>Process the client upload by entering a job name, uploading the JSONL file to ASAM, and clicking Upload.</li>
+        <li>Once processed, a new entry will appear in the Job History, where you can view the results.</li>
+      </ol>
+
+      <p>For more details about Client Upload and Job History, please refer to the user guides.</p>
     </section>
 
   </div>
